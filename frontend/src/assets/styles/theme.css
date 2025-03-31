@@ -1,0 +1,176 @@
+/* Tema personalizado para PrimeVue */
+:root {
+    /* Cores principais */
+    --blue-50: #EEF2FF;
+    --blue-100: #E0E7FF;
+    --blue-200: #C7D2FE;
+    --blue-300: #A5B4FC;
+    --blue-400: #818CF8;
+    --blue-500: #6366F1;
+    --blue-600: #4F46E5;
+    --blue-700: #4338CA;
+    --blue-800: #3730A3;
+    --blue-900: #312E81;
+    
+    /* Variáveis de tema PrimeVue */
+    --surface-a: #FFFFFF;
+    --surface-b: #F8F9FA;
+    --surface-c: #E9ECEF;
+    --surface-d: #DEE2E6;
+    --surface-e: #FFFFFF;
+    --surface-f: #FFFFFF;
+    --text-color: #1E293B;
+    --text-color-secondary: #64748B;
+    --primary-color: var(--blue-600);
+    --primary-color-text: #FFFFFF;
+    --surface-0: #FFFFFF;
+    --surface-50: #FAFAFA;
+    --surface-100: #F5F5F5;
+    --surface-200: #EEEEEE;
+    --surface-300: #E0E0E0;
+    --surface-400: #BDBDBD;
+    --surface-500: #9E9E9E;
+    --surface-600: #757575;
+    --surface-700: #616161;
+    --surface-800: #424242;
+    --surface-900: #212121;
+    --surface-ground: #F9FAFB;
+    --surface-section: #FFFFFF;
+    --surface-card: #FFFFFF;
+    --surface-overlay: #FFFFFF;
+    --surface-border: #E5E7EB;
+    --content-padding: 1rem;
+    --inline-spacing: 0.5rem;
+    --border-radius: 6px;
+    --focus-ring: 0 0 0 2px #FFFFFF, 0 0 0 4px var(--blue-400);
+    --maskbg: rgba(0, 0, 0, 0.4);
+    --highlight-bg: var(--blue-50);
+    --highlight-text-color: var(--blue-700);
+
+    /* Estados */
+    --success-color: #10B981;
+    --info-color: #3B82F6;
+    --warning-color: #F59E0B;
+    --error-color: #EF4444;
+    
+    /* Fontes */
+    --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --font-size: 14px;
+}
+
+/* Ajustes específicos da tabela (DataTable) */
+.p-datatable .p-datatable-tbody > tr.p-highlight {
+    background-color: var(--blue-50) !important;
+    color: var(--blue-700) !important;
+}
+
+.p-datatable .p-sortable-column.p-highlight {
+    background-color: var(--blue-50);
+    color: var(--blue-700);
+}
+
+.p-datatable .p-sortable-column.p-highlight .p-sortable-column-icon {
+    color: var(--blue-700);
+}
+
+/* Ajuste do menu dropdown */
+.p-dropdown-panel .p-dropdown-items .p-dropdown-item {
+    padding: 0.75rem 1rem;
+}
+
+/* Ajustes dos botões */
+.p-button:focus {
+    box-shadow: var(--focus-ring);
+}
+
+.p-button.p-button-success {
+    background-color: var(--success-color);
+    border-color: var(--success-color);
+}
+
+.p-button.p-button-info {
+    background-color: var(--info-color);
+    border-color: var(--info-color);
+}
+
+.p-button.p-button-warning {
+    background-color: var(--warning-color);
+    border-color: var(--warning-color);
+}
+
+.p-button.p-button-danger {
+    background-color: var(--error-color);
+    border-color: var(--error-color);
+}
+
+/* Ajustes dos inputs */
+.p-inputtext {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+}
+
+/* Ajustes de componentes específicos */
+.p-dialog .p-dialog-header {
+    padding: 1.25rem 1.5rem;
+}
+
+.p-dialog .p-dialog-content {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.p-dialog .p-dialog-footer {
+    padding: 1rem 1.5rem;
+}
+
+.p-card {
+    box-shadow: var(--shadow-sm);
+}
+
+.p-toast .p-toast-message {
+    border-radius: var(--border-radius);
+}
+
+/* Ajustes do Toast */
+.p-toast .p-toast-message.p-toast-message-success {
+    background-color: #ECFDF5;
+    border-color: #10B981;
+    color: #064E3B;
+}
+
+.p-toast .p-toast-message.p-toast-message-success .p-toast-message-icon,
+.p-toast .p-toast-message.p-toast-message-success .p-toast-icon-close {
+    color: #10B981;
+}
+
+.p-toast .p-toast-message.p-toast-message-info {
+    background-color: #EFF6FF;
+    border-color: #3B82F6;
+    color: #1E40AF;
+}
+
+.p-toast .p-toast-message.p-toast-message-info .p-toast-message-icon,
+.p-toast .p-toast-message.p-toast-message-info .p-toast-icon-close {
+    color: #3B82F6;
+}
+
+.p-toast .p-toast-message.p-toast-message-warn {
+    background-color: #FFFBEB;
+    border-color: #F59E0B;
+    color: #92400E;
+}
+
+.p-toast .p-toast-message.p-toast-message-warn .p-toast-message-icon,
+.p-toast .p-toast-message.p-toast-message-warn .p-toast-icon-close {
+    color: #F59E0B;
+}
+
+.p-toast .p-toast-message.p-toast-message-error {
+    background-color: #FEF2F2;
+    border-color: #EF4444;
+    color: #B91C1C;
+}
+
+.p-toast .p-toast-message.p-toast-message-error .p-toast-message-icon,
+.p-toast .p-toast-message.p-toast-message-error .p-toast-icon-close {
+    color: #EF4444;
+}
